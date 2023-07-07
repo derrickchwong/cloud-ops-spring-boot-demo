@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: contacts
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus, metrics
